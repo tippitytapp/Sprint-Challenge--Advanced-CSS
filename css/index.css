@@ -388,3 +388,29 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body .navSection {
+  width: 100%;
+}
+body h2 {
+  margin: 2%;
+  width: 100%;
+}
+body .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body footer {
+  width: 75%;
+  margin-top: 5%;
+  position: fixed;
+  bottom: 0;
+}
