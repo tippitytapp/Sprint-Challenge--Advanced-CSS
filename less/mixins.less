@@ -1,1 +1,23 @@
 // Mixins Here
+
+
+//parametric mixin for btn
+.custom-btn(@bg-color, @font-color){
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 30%;
+    height: 25px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color:@font-color;
+    text-align:center;
+    padding:5px;
+
+    
+    &:hover{
+      background-color:@font-color;
+      color:@bg-color;
+    }
+}
