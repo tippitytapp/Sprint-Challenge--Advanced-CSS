@@ -3,41 +3,69 @@
 .home {
 
   .intro {
-
+    img{
+      @media @phone{
+        width:100%;
+        }
+    }
     h2 {
       padding: 15px;
-    }
+    }//end of intro h2
 
     p {
       padding:0 15px;
-    }
+      @media @phone{
+        .mediaQueryFontSizeReduction();
+        }
+    }//end of intro p
   
-  }
+  }//end of intro
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone{
+      justify-content:center;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
+      @media @phone{
+        width:90%
+      }//end of img media
+     
+      
+    }// end of space images img
+  }// end of space images
+@media @phone{
+  .sky, .launch{
+    display:none;
   }
-
+}
   .visit-planets {
     padding: 15px;
+    @media @phone{
+      width:90%;
+      margin-left:5%;
+      padding-bottom:5%;
+    }
 
     h3 {
       margin-top: 11px;
-    }
+    }//end of visit planets h3
 
     p {
       margin-top: 13px;
-    }
-  }
+      @media @phone{
+        .mediaQueryFontSizeReduction();
+        }
+    }//end of visit planets p
+  }//end of visit planets
 
   .walk {
     margin-top: 60px;
@@ -46,8 +74,21 @@
     display: flex;
     justify-content: center;
 
+      @media @phone{
+        flex-direction:column-reverse;
+        padding-top:3%;
+        padding-left:0%;
+        padding-right: 0%;
+        margin-top:0%;
+        align-items:center;
+
+
+      }
     .walk-text {
       width: 50%;
+      @media @phone{
+        width:90%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -55,13 +96,24 @@
 
       p {
         margin-bottom: 26px;
+        @media @phone{
+          .mediaQueryFontSizeReduction();
+          }
       }//walktext p end
       .btn-parent{
             display:flex;
             align-items:center;
+
             
+
           .btn {
            .custom-btn(@btn-bg-color, #fff);
+
+           @media @phone{
+             width:100%;
+             height:45px;
+             padding-top:4%;
+           }
            }//walktext btn-parent .btn end
        }//walktext btn-parent end
     }// walktext end
@@ -69,6 +121,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width:90%;
+        margin-left:0%;
+        margin-bottom:2%;
+      }
       
       img {
         width: 100%;
